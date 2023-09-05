@@ -1,0 +1,20 @@
+<div class="records-list">
+    <table *ngIf="dataloaded" id="employees">
+        <thead>
+            <th>Emp ID</th>
+            <th>Emp Name</th>
+            <th>Department</th>
+            <th>Salary</th>        
+        </thead>
+        <tbody style="margin-top:40px ;">
+            <tr *ngFor="let item of employeeData">
+                <td>{{item.eid}}</td> 
+                <td>{{item.ename}}</td> 
+                <td>{{item.dept}}</td> 
+                <td>{{item.salary}}</td> 
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button class="export-btn" (click)="exportData()">Export Data</button>

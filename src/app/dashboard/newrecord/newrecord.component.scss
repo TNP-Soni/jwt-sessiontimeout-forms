@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(61, 239, 34);
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.login{
+    align-self: center;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.card{
+    background-color: white;
+    border-radius: 30px;
+    padding :20px;
+    padding-top: 50px;
+    box-shadow: 2px 2px 2px 2px grey;
+    height: 380px;
+    width: 400px;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+.menu-item{
+ display: flex;   
+ flex-direction: column;
+ width: inherit;
+ gap:12px ;
+}
+.input-field{
+    align-self: flex-end;
+    height: 20px;
+    width: inherit;
+}
+
+.alert{
+    border: 2px solid red;
+}
+.btn{
+    margin-top: 25px;
+    height: 50px;
+}

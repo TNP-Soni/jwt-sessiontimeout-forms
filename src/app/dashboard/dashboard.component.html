@@ -1,0 +1,7 @@
+<div class="header">
+    <app-top-nav (changeActionEvent)="changeAction($event)"></app-top-nav>
+</div>
+
+<app-newrecord *ngIf="newrecord"></app-newrecord>
+<app-bulkupload *ngIf="bulkupload"></app-bulkupload>
+<app-viewall *ngIf="viewrecord"></app-viewall>

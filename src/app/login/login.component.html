@@ -1,0 +1,22 @@
+<div class="form-body">
+    <div class="login">
+      <p>
+        LogIn
+      </p>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="card">
+        <div class="menu-item">
+          <label for="email">Email/Mobile</label>
+          <input type="email" id="email" [ngClass]="loginForm.get('email')?.invalid && loginForm.get('email')?.touched?'alert':''" class="input-field" formControlName="email" required>
+        </div>
+        <div class="menu-item">
+          <label for="password">Password </label>
+          <input class="input-field" [ngClass]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched?'alert':''" type="password" id="password" formControlName="password" required>
+        </div>        
+        <button type="submit" class="btn" [disabled]="loginForm.invalid">Sign Up</button>
+        <div class="switch" routerLink="">Switch to Sign-Up</div>
+        </div>
+      </form>
+  </div>
+  </div>
+  

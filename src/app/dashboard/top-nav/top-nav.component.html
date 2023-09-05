@@ -1,0 +1,15 @@
+<div class="header_part row">
+    <div class="left_text">Manager's Help</div>
+    <div class="right_menu">
+        <div class="top_nav">
+            <div class = "nav_item" (click)="opendropdown()" >Actions</div>
+            <div class = "nav_item" (click)="triggersignout()" href="#">Log Out</div> 
+        </div>
+    </div>
+</div>
+
+<div class="actions-dropdown" *ngIf="dropdown">
+    <div (click)="changeAction('newrecord')" class="list-item">New Record</div>
+    <div (click)="changeAction('viewrecord')" class="list-item">View All</div>
+    <div (click)="changeAction('bulkupload')" class="list-item">Bulk Upload</div>
+</div>
